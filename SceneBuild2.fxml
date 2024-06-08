@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#switchScene1" prefHeight="402.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Button layoutX="27.0" layoutY="187.0" mnemonicParsing="false" onAction="#logOutButton" prefHeight="25.0" prefWidth="114.0" text="exit" textFill="LIME">
+         <font>
+            <Font name="Courier New" size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="button" layoutX="26.0" layoutY="142.0" mnemonicParsing="false" onAction="#switchScene1" prefHeight="25.0" prefWidth="114.0" text="Back" textFill="LIME">
+         <font>
+            <Font name="Courier New" size="10.0" />
+         </font>
+      </Button>
+      <Line endX="471.33331298828125" endY="-2.4999895095825195" layoutX="254.0" layoutY="15.0" startX="-243.33334350585938" startY="-3.4999895095825195" stroke="LIME" />
+      <Label fx:id="Label1" alignment="TOP_LEFT" layoutX="27.0" layoutY="23.0" prefHeight="25.0" prefWidth="108.0" text="TIC-TAC-TOY" textFill="#f52d0c">
+         <font>
+            <Font name="FrankRuhlHofshi-Regular" size="17.0" />
+         </font>
+      </Label>
+      <Accordion />
+      <Line endX="-100.83334350585938" endY="332.3333435058594" layoutX="111.0" layoutY="57.0" startX="-100.83334350585938" startY="-45.9999885559082" stroke="LIME" />
+      <Line endX="613.3333129882812" endY="3.499969482421875" layoutX="112.0" layoutY="386.0" startX="-101.33334350585938" startY="3.833343505859375" stroke="LIME" />
+      <Line endX="85.83331298828125" endY="265.9999694824219" layoutX="640.0" layoutY="123.0" startX="85.83331298828125" startY="-109.99999237060547" stroke="LIME" />
+      <Line endX="-100.0" endY="309.7928771972656" layoutX="262.0" layoutY="78.0" startX="-100.0" startY="-65.99999237060547" stroke="LIME" />
+      <Line endX="100.0" startX="-100.0" />
+      <Label fx:id="under" layoutX="363.0" layoutY="354.0" onDragDetected="#playerunder" prefHeight="25.0" prefWidth="28.0" />
+      <Label fx:id="player1" layoutX="215.0" layoutY="357.0" prefHeight="18.0" prefWidth="89.0" text="player : 0" />
+      <Label fx:id="computer" layoutX="449.0" layoutY="357.0" prefHeight="18.0" prefWidth="89.0" text="0 : computer" />
+      <ImageView fitHeight="49.0" fitWidth="26.0" layoutX="68.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Untitled%20(1).png" />
+         </image>
+      </ImageView>
+      <GridPane hgap="3.0" layoutX="212.0" layoutY="41.0" prefHeight="295.0" prefWidth="303.0" style="-fx-border-color: green; -fx-background-color: green;" vgap="3.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="100.33333333333333" minWidth="10.0" prefWidth="95.33335367838542" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="112.33331298828126" minWidth="10.0" prefWidth="101.33335367838541" />
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="95.33331298828122" minWidth="10.0" prefWidth="95.33331298828122" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="button7" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="98.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="button5" layoutX="11.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="98.0" prefWidth="104.0" GridPane.columnIndex="2" />
+            <Button fx:id="button4" layoutX="110.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="98.0" prefWidth="104.0" GridPane.columnIndex="1" />
+            <Button fx:id="button6" layoutX="11.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="98.0" prefWidth="104.0" GridPane.rowIndex="1" />
+            <Button fx:id="button8" layoutX="110.0" layoutY="109.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="98.0" prefWidth="104.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="button9" layoutX="214.0" layoutY="109.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="98.0" prefWidth="104.0" GridPane.rowIndex="2" />
+            <Button fx:id="button10" layoutX="11.0" layoutY="206.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="98.0" prefWidth="104.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="button11" layoutX="110.0" layoutY="206.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="98.0" prefWidth="104.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="button3" layoutX="214.0" layoutY="206.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="98.0" prefWidth="104.0" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

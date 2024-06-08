@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#switchScene2" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Button fx:id="exit3" layoutX="27.0" layoutY="247.0" mnemonicParsing="false" onAction="#logOutButton" prefHeight="25.0" prefWidth="114.0" text="exit" textFill="LIME">
+         <font>
+            <Font name="Courier New" size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="button1" contentDisplay="TEXT_ONLY" layoutX="27.0" layoutY="126.0" mnemonicParsing="false" onAction="#switchScene2" prefHeight="25.0" prefWidth="114.0" text="Player vs Bot " textFill="LIME">
+         <font>
+            <Font name="Courier New" size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="button2" layoutX="27.0" layoutY="185.0" mnemonicParsing="false" onAction="#switchScene3" prefHeight="25.0" prefWidth="114.0" text="Player vs Player" textFill="LIME">
+         <font>
+            <Font name="Courier New" size="10.0" />
+         </font></Button>
+      <Line endX="333.33331298828125" endY="-3.4999895095825195" layoutX="254.0" layoutY="15.0" startX="-243.33334350585938" startY="-3.4999895095825195" stroke="LIME" />
+      <Label fx:id="Label1" alignment="TOP_LEFT" layoutX="27.0" layoutY="23.0" prefHeight="25.0" prefWidth="108.0" text="TIC-TAC-TOE" textFill="#f52d0c">
+         <font>
+            <Font name="FrankRuhlHofshi-Regular" size="17.0" />
+         </font>
+      </Label>
+      <Accordion />
+      <Line endX="-100.83334350585938" endY="332.3333435058594" layoutX="111.0" layoutY="57.0" startX="-100.83334350585938" startY="-45.9999885559082" stroke="LIME" />
+      <Line endX="475.33331298828125" endY="2.499969482421875" layoutX="112.0" layoutY="386.0" startX="-101.33334350585938" startY="3.833343505859375" stroke="LIME" />
+      <Line endX="85.83331298828125" endY="265.9999694824219" layoutX="502.0" layoutY="122.0" startX="85.83331298828125" startY="-109.99999237060547" stroke="LIME" />
+      <Line endX="-100.0" endY="309.7928771972656" layoutX="262.0" layoutY="78.0" startX="-100.0" startY="-65.99999237060547" stroke="LIME" />
+      <Line endX="100.0" startX="-100.0" />
+      <ImageView fitHeight="49.0" fitWidth="26.0" layoutX="68.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Untitled%20(1).png" />
+         </image>
+      </ImageView>
+      <GridPane hgap="3.0" layoutX="237.0" layoutY="69.0" prefHeight="257.0" prefWidth="276.0" style="-fx-background-color: green; -fx-border-color: green;" vgap="3.0" AnchorPane.rightAnchor="72.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" prefHeight="95.0" prefWidth="116.0" text="X" textFill="GREEN">
+               <font>
+                  <Font size="40.0" />
+               </font></Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="116.0" GridPane.columnIndex="1" />
+            <Button layoutX="113.0" layoutY="10.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="116.0" text="X" textFill="GREEN" GridPane.columnIndex="2">
+               <font>
+                  <Font size="40.0" />
+               </font></Button>
+            <Button layoutX="217.0" layoutY="10.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="116.0" GridPane.rowIndex="1" />
+            <Button layoutX="10.0" layoutY="97.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="116.0" text="O" textFill="GREEN" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="40.0" />
+               </font></Button>
+            <Button layoutX="113.0" layoutY="97.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="116.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button layoutX="217.0" layoutY="97.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="116.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button layoutX="113.0" layoutY="185.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="116.0" text="X" textFill="GREEN" GridPane.rowIndex="2">
+               <font>
+                  <Font size="40.0" />
+               </font></Button>
+            <Button layoutX="10.0" layoutY="185.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="116.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
